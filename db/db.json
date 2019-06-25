@@ -1,0 +1,31 @@
+{
+  "client": [
+    {
+      "id": 1,
+      "name": "Javier Alexander villalba Aguirre",
+      "email": "tec.informatica.javier@gmail.com",
+      "status": "true"
+    },
+    {
+      "name": "data",
+      "cedula": "data",
+      "email": "data",
+      "status": true,
+      "id": 2
+    },
+    {
+      "name": "a",
+      "cedula": "a",
+      "email": "a",
+      "status": true,
+      "id": 3
+    },
+    {
+      "name": "b",
+      "cedula": "b",
+      "email": "b",
+      "status": true,
+      "id": 4
+    }
+  ]
+}

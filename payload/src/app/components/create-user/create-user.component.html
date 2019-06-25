@@ -1,0 +1,26 @@
+<div class="createuser">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="inputAddress">Nombre</label>
+      <input type="text" class="form-control" formControlName="name" placeholder="Name">
+      <div *ngIf="form.get('name').hasError('required')" class="error">
+          El Nombre no puede estar <strong>vacio.</strong>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Cedula</label>
+      <input type="text" class="form-control" formControlName="cedula" placeholder="Cedula">
+      <div *ngIf="form.get('cedula').hasError('required')" class="error">
+          La cedula no puede estar <strong>vacia.</strong>
+      </div>
+    </div>
+    <div class="form-group">
+        <label for="inputAddress2">Correo {{form.status}}</label>
+        <input type="text" class="form-control" formControlName="email" placeholder="Correo">
+        <div *ngIf="form.get('email').hasError('required')" class="error">
+            La email no puede estar <strong>vacia.</strong>
+        </div>
+    </div>
+    <button type="submit" [disabled]="form.status != 'VALID'" class="btn btn-primary">Sign in</button>
+  </form>
+</div>

@@ -1,0 +1,14 @@
+<div class="listUser">
+  <table class="table">
+    <tr class="success">
+      <th>Nombre</th>
+      <th>Cedula</th>
+      <th>Email</th>
+    </tr>
+    <tr *ngFor="let datos of allUser">
+        <th>{{datos.name}}</th>
+        <th>{{datos.cedula}}</th>
+        <th>{{datos.email}}</th>
+      </tr>
+  </table>
+</div>
